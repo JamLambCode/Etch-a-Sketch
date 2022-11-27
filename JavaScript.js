@@ -19,10 +19,15 @@ function createPixels(num){
     
 }
 
+function resetColor(){
+    //double for loop through and remove the class colorChange
+    //needs to be given a container with stuff in it
+}
+
 
 
 //here's the div that we are gonna work w/ and we give it a class to make ti sketch
 
 
-createPixels(6);
+createPixels(64);
 

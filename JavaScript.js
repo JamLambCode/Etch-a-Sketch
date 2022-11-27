@@ -4,6 +4,13 @@ let empty = true;
 
 const container = document.querySelector(".container");
 
+let mouseDown = 0;
+document.body.onmousedown = function() { 
+    mouseDown = 1;
+}
+document.body.onmouseup = function() {
+    mouseDown = 0;
+}
 
 function createPixels(num){
     if(empty == false){
@@ -22,7 +29,9 @@ function createPixels(num){
                 pixel.classList.add("pixel");
 
                 pixel.addEventListener("mouseover", function(){
-                    pixel.classList.add("colorChange");
+                    if(mouseDown == 1){
+                        pixel.classList.add("colorChange");
+                    }
                 });
 
                 row.appendChild(pixel);

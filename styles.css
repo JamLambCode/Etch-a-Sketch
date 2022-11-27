@@ -1,9 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
 .pixel{
     background: red;
-    width:100px;
-    height:100px;
+
+    flex: 1;
 }
+
 
 .colorChange{
     background-color: blue;
 }
+
+.container{
+    display: flex;
+    width:500px;
+    height:500px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+

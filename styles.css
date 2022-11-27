@@ -3,30 +3,37 @@ body{
     flex-direction: column;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
+    background-color: #fffffe;
+    justify-content: space-between;
+    padding:0;
+    margin:0;
 }
 
 .content{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
 .pixel{
-    background: red;
-
     flex: 1;
+    
 }
 
 
 .colorChange{
-    background-color: blue;
+    background-color: #00ebc7;
 }
 
 .container{
     display: flex;
     width:500px;
     height:500px;
+    border: solid 5px #00214d;
+    background: #FAF9F6;
+
 }
 
 .row{
@@ -37,5 +44,36 @@ body{
 
 .btns {
     display: flex;
-    flex-direction: column;
+    gap: 10px;
+}
+
+.btn{
+    font-size: large;
+    background-color: #00ebc7;
+    border-radius: 5px;
+    border:0;
+    padding: 5px 10px;
+    color: #00214d;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow:2px 5px 5px rgb(231, 219, 219);
+    
+}
+
+.header,
+.footer{
+    color: #00214d;
+    background-color: #f2f4f6;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.footer{
+    padding: 10px;
 }
